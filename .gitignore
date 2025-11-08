@@ -6,3 +6,4 @@ phase_1b/images/*
 !phase_1b/images/.gitkeep
 phase_2b/images/*
 !phase_2b/images/.gitkeep
+phase_2b/submission/model/model.safetensors
