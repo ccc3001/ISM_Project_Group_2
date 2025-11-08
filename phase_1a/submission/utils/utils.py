@@ -80,7 +80,7 @@ def perform_pca(data, num_components):
     - top_k_eigenvectors (numpy.ndarray): The top k eigenvectors.
     - sorted_eigenvalues (numpy.ndarray): The sorted eigenvalues.
     """
-
+    print(data[1])
     # Step 1: Standardize the Data
     mean = np.mean(data, axis=0)
     std_dev = np.std(data, axis=0)
@@ -105,7 +105,7 @@ def perform_pca(data, num_components):
 
     # Return the real part of the data (in case of numerical imprecision)
     data_reduced = np.real(data_reduced)
-
+    print(data_reduced[1])
     return data_reduced
 
 
