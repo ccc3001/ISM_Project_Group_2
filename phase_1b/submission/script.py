@@ -60,7 +60,7 @@ if __name__ == "__main__":
     
     NUM_CLASSES = 3
     IMAGE_SIZE = (360, 640) # (H, W)
-    model = timm.create_model('resnet18', pretrained=False, num_classes=NUM_CLASSES)
+    model = timm.create_model('efficientnet_b0', pretrained=False, num_classes=NUM_CLASSES)
     model.load_state_dict(torch.load(MODEL_WEIGHTS_PATH, map_location=torch.device('cpu')))
 
 
